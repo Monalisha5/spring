@@ -2,14 +2,13 @@ package com.moblog.dev;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 
 
 @Controller
 public class BlogController {
     @GetMapping({"/","/blogs"})
        public String blogs(){
-         return "blog";
+         return "blogs";
     }
 @GetMapping("/blog")
 public String blog() {
